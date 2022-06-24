@@ -1,0 +1,939 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #073763;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------HEADER--INICIO----------------------------------------------------------------------------------------- */
+
+header {
+    display: flex;
+    height: 110px;
+    background-color: #085394;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.barra__nav nav a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    padding-right: 10px;
+    transition: ease-out 0.5s;
+
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    transition: ease-out 0.5s;
+}
+
+.barra__nav nav a:hover{
+    color: #155c97;
+    transition: .60s;
+    background-color: #4c94cf;
+    padding: 6px;
+    border-radius: 16px;
+}
+
+.logo:hover{
+    color: #155c97;
+    transition: .60s;
+    background-color: #4c94cf;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 5px;
+}
+
+
+/* ---------------------------------------------------------------------HEADER--FIN--------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------INDEX--INICIO-------------------------------------------------------------------------------------------- */
+/* -------------------------GRID---------------------- */
+.contenedor-padre-index{
+    display: grid;
+    grid-template-columns:25% 25% 50%;
+    grid-template-rows: 50vh 400vh;
+    grid-template-areas: 
+    
+    "section1 section1 section1"
+    "section2 section2 section2"
+    
+    ;
+}
+/* -------------------------SECTION1------------------ */
+
+.index__section__intro{
+    grid-area: section1;
+    background-color: #085394;
+    color: aliceblue;
+    margin: 20px 25px 20px 25px;
+    border-radius: 16px;
+    
+}
+
+.index__section__intro div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index__section__intro div h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 3rem;
+    padding-top: 40px;
+    
+    
+}
+
+
+
+.index__section__intro div article p{
+    font-size: 1.9rem;
+    padding: 20px 6vh;
+
+
+}
+
+
+
+
+
+
+
+/* -----------------------SECTION2------------------------- */
+
+.index__section__destinos{
+    grid-area: section2;
+    background-color: #085394;
+    color: aliceblue;
+    margin: 20px 25px 20px 25px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+ 
+
+
+
+}
+
+.index__section__destinos .contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.index__section__destinos h3{
+    font-size: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 25px;
+
+}
+
+iframe{
+    align-self: center;
+
+}
+/* IMAGEN CABA--------------------------------------- */
+.caba{
+    background-color: #073763;
+    margin: 60px;
+    display: inline-block;
+    padding: 2vh;
+    border-radius: 16px;
+}
+.caba img{
+    height: 35vw;
+}
+
+/* IMAGEN CORDOBA------------------------------------ */
+.cba{
+    background-color: #073763;
+    margin: 60px;
+    display: inline-block;
+    padding: 2vh;
+    border-radius: 16px;
+}
+
+.cba img{
+    height: 35vw;
+}
+/* IMAGEN USHUAIA-------------------------------------- */
+.ushuaia{
+    background-color: #073763;
+    margin: 60px;
+    display: inline-block;
+    padding: 2vh;
+    border-radius: 16px;
+}
+
+.ushuaia img{
+    height: 35vw;
+}
+/* IMAGEN BARILOCHE------------------------------------ */
+.bariloche{
+    background-color: #073763;
+    margin: 60px;
+    display: inline-block;
+    padding: 2vh;
+    border-radius: 16px;
+}
+
+.bariloche img{
+    height: 35vw;
+}
+
+
+
+
+/* ------------------------FOOTER------------------------- */
+
+footer{
+    grid-area: footer;
+    background-color: #085394;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+}
+footer h2{
+    align-self: center;
+    padding: 20px 0px 20px 0px;
+}
+footer h3{
+    align-self: center;
+    margin: 0px 50px 50px 50px;
+}
+
+/* -----------------------------------INDEX--FIN--------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------GALERIA--INICIO------------------------------------------------------------------------------------------ */
+
+.galeria__section{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25vh 50vh 50vh 50vh 50vh;
+    grid-template-areas: 
+    
+    "subnav subnav"
+    "caba cba"
+    "caba cba"
+    "ushuaia bariloche"
+    "ushuaia bariloche"
+    ;
+    color: aliceblue;
+    
+}
+
+
+
+/* --subnav-------------------- */
+.galeria__section .destinos{
+    grid-area: subnav;
+    background-color: #085394;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 13px;
+    
+}
+
+.galeria__section .destinos .botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+/* --subnav--------------------- */
+/* BOTONES------------------- */
+
+#boton__galeria__1{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #073763;
+    padding: 10px;
+    border-radius: 14px;
+    transition: ease-in .40s;
+}
+#boton__galeria__1:hover{
+    background-color: #042544;
+    padding: 13px;
+    border-radius: 14px;
+    transition: .60s;
+    
+}
+
+
+#boton__galeria__2{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #073763;
+    padding: 10px;
+    border-radius: 14px;
+    transition: ease-in .40s;
+
+}
+
+#boton__galeria__2:hover{
+    background-color: #042544;
+    padding: 13px;
+    border-radius: 14px;
+    transition: .60s;
+
+}
+
+
+
+
+
+#boton__galeria__3{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #073763;
+    padding: 10px;
+    border-radius: 14px;
+    transition: ease-in .40s;
+
+}
+#boton__galeria__3:hover{
+    background-color: #042544;
+    padding: 13px;
+    border-radius: 14px;
+    transition: .60s;
+
+}
+
+
+
+
+
+#boton__galeria__4{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #073763;
+    padding: 10px;
+    border-radius: 14px;
+    transition: ease-in .40s;
+
+}
+#boton__galeria__4:hover{
+    background-color: #042544;
+    padding: 13px;
+    border-radius: 14px;
+    transition: .60s;
+
+}
+
+
+/* --BOTONES--FIN---------------------------- */
+
+
+/* --TARJETAS INICIO----------------------------------- */
+
+.galeria__section .galeria__caba{
+    grid-area: caba;
+    background-color: #085394;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px 20px 25px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+
+}
+
+.galeria__section .galeria__caba h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.galeria__section .galeria__caba p{
+    padding-bottom: 20px;
+}
+
+.galeria__section .galeria__caba img{
+    margin: 100px;
+    border-radius: 14px;
+}
+
+
+
+
+/* --------------------------------------- */
+
+
+
+
+.galeria__section .galeria__cordoba{
+    grid-area: cba;
+    background-color: #085394;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px 20px 25px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+}
+
+
+.galeria__section .galeria__cordoba h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.galeria__section .galeria__cordoba p{
+    padding-bottom: 20px;
+}
+
+.galeria__section .galeria__cordoba img{
+    margin: 100px;
+    border-radius: 14px;
+}
+
+
+/* ----------------------------------------- */
+
+
+.galeria__section .galeria__ushuaia{
+    grid-area: ushuaia;
+    background-color: #085394;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px 20px 25px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+}
+
+.galeria__section .galeria__ushuaia h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.galeria__section .galeria__ushuaia p{
+    padding-bottom: 20px;
+}
+
+.galeria__section .galeria__ushuaia img{
+    margin: 100px;
+    border-radius: 14px;
+}
+
+
+/* ----------------------------------------- */
+
+
+.galeria__section .galeria__bariloche{
+    grid-area: bariloche;
+    background-color: #085394;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px 20px 25px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+}
+
+.galeria__section .galeria__bariloche h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.galeria__section .galeria__bariloche p{
+    padding-bottom: 20px;
+}
+
+.galeria__section .galeria__bariloche img{
+    margin: 100px;
+    border-radius: 14px;
+}
+
+/* ------------TARGETAS--FIN---------------------------------- */
+
+
+/* -------------------------------------------------------GALERIA--FIN------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------CONTACTO--INICIO----------------------------------------------------- */
+
+/* -------------------LOGOS--DE--CONTACTO------------------------------------ */
+.contacto__redes{
+    background-color: #085394;
+    margin: 20px 25px 20px 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px 20px 25px;
+    border-radius: 16px;
+}
+
+
+.contacto__redes h2{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.contacto__images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 60px 0px 60px;
+}
+
+.contacto__redes img{
+    height: auto;
+    width: auto;
+    max-height: 100px;
+    max-width: 100px;
+    transition: ease-in .60s;
+    
+}
+.contacto__redes img:hover{
+    height: auto;
+    width: auto;
+    max-height: 110px;
+    max-width: 110px;
+    transition: .60s;
+}
+
+/* ---------------------LOGOS--DE--CONTACTO--FIN---------------------- */
+
+/* -----------OTROS--MEDIOS--INICIO----------------------------------- */
+
+.contacto__otros{
+    background-color: #085394;
+    color: aliceblue;
+    margin: 20px 25px 20px 25px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 25px 20px 25px;
+}
+
+.contacto__otros h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
+ #tabla__contacto{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+
+/* ---------------------------------- */
+
+
+
+
+
+
+.contacto__form{
+    background-color: #085394;
+    color: aliceblue;
+    margin: 20px 25px 20px 25px;
+    padding: 20px 25px 20px 25px;
+    border-radius: 17px;
+
+}
+
+.contacto__form h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px 20px 0px;
+
+}
+
+.form__div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.form__div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #042544;
+    padding: 20px;
+    border-radius: 16px;
+
+}
+
+.form__div form input{
+    width: 260px;
+    margin: 0px 0px 25px 0px;
+    border-radius: 16px;
+}
+
+.form__div form textarea{
+    width: 260px;
+    height: 100px;
+    border-radius: 16px;
+}
+#form__button{
+    align-self: center;
+    font-size: 2vh;
+    color: aliceblue;
+    margin-top: 20px;
+    padding: 25px 25px 25px 25px;
+    background-color: #073763;
+    transition: ease-in .30s;
+}
+#form__button:hover{
+    background-color: #155c97;
+    transition: .50s;
+
+}
+
+/* ------------OTROS--MEDIOS--FIN------------------------------------- */
+
+/* ------------------------CONTACTO--------FIN------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------NOSOTROS--INICIO---------------------------------------------------------------- */
+
+
+
+/* TARGETA--1---------------------------------------------- */
+.nosotros__quienes--somos{
+    background-color: #085394;
+    color: aliceblue;
+    margin: 20px 25px 20px 25px;
+    padding: 20px 25px 20px 25px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotros__quienes--somos h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 4vh;
+}
+.nosotros__div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.nosotros__quienes--somos p{
+    font-size: 2vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nosotros__quienes--somos img{
+    height: auto;
+    width: auto;
+    max-height: 700px;
+    max-width: 1400px;
+
+}
+
+/* TARGETA--1--FIN---------------------------------------------------- */
+
+
+
+
+
+
+/* TARGETA--2----------------------------------------------------------- */
+
+.nosotros__nuestros--vehiculos{
+    background-color: #085394;
+    color: aliceblue;
+    margin: 20px 25px 20px 25px;
+    padding: 20px 25px 20px 25px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotros__nuestros--vehiculos h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 4vh;
+}
+
+.vehiculos__div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+
+.nosotros__nuestros--vehiculos p{
+    font-size: 2vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.nosotros__nuestros--vehiculos img{
+    height: auto;
+    width: auto;
+    max-height: 700px;
+    max-width: 1400px;
+}
+
+/* TARJETA--2--FIN------------------------------------------------------ */
+
+
+
+
+
+/* TARGETA--3----------------------------------------------------------- */
+
+.nosotros__ofrecemos{
+    background-color: #085394;
+    color: aliceblue;
+    margin: 20px 25px 20px 25px;
+    padding: 20px 25px 20px 25px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.div__ofrecemos{
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 2.5vh;
+}
+
+
+/* TARGETA--3--FIN----------------------------------- */
+
+/* ----------NOSOTROS--FIN---------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------RESERVAS--INICIO------------------------------------------ */
+
+.reservas__section{
+    background-color: #085394;
+    color: aliceblue;
+    margin: 20px 25px 20px 25px;
+    padding: 20px 25px 20px 25px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reservas__section h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.reservas__div{
+    align-self: center;
+    background-color: #042544;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.reservas__div form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    
+}
+.reservas__div form input{
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+
+#boton__reservas{
+    align-self: center;
+    font-size: 2vh;
+    color: aliceblue;
+    margin-top: 20px;
+    padding: 25px 25px 25px 25px;
+    background-color: #073763;
+    transition: ease-in .30s;
+    border-radius: 16px;
+}
+
+#boton__reservas:hover{
+    background-color: #155c97;
+    transition: .50s;
+}
+
+
+
+/* ----------------RESERVAS--FIN-------------------------------------------------- */
