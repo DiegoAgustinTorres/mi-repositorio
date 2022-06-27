@@ -7,14 +7,45 @@
 
 body{
     background-color: #073763;
+    z-index: 20;
 }
 
 
 
 
+.carousel-arg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel{
+    align-self: center;
+}
+
+.carousel-inner{
+    height: 110vh;
+    width: 80vw;
+}
 
 
 
+.cardsArgen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    color: aliceblue;
+}
+
+.card{
+    background-color: #042544;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    
+    
+}
 
 
 
@@ -102,7 +133,7 @@ header {
 
 /* ------------------------------------------------------------------INDEX--INICIO-------------------------------------------------------------------------------------------- */
 /* -------------------------GRID---------------------- */
-.contenedor-padre-index{
+/* .contenedor-padre-index{
     display: grid;
     grid-template-columns:25% 25% 50%;
     grid-template-rows: 50vh 400vh;
@@ -112,7 +143,7 @@ header {
     "section2 section2 section2"
     
     ;
-}
+} */
 /* -------------------------SECTION1------------------ */
 
 .index__section__intro{
@@ -249,8 +280,8 @@ footer{
     grid-area: footer;
     background-color: #085394;
     color: aliceblue;
-    display: flex;
-    flex-direction: column;
+    
+    
     border-radius: 16px;
 }
 footer h2{
@@ -302,7 +333,8 @@ footer h3{
 /* ---------------------------------------------------GALERIA--INICIO------------------------------------------------------------------------------------------ */
 
 .galeria__section{
-    display: grid;
+
+/*         display: grid;
     gap: 20px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25vh 50vh 50vh 50vh 50vh;
@@ -313,9 +345,10 @@ footer h3{
     "caba cba"
     "ushuaia bariloche"
     "ushuaia bariloche"
-    ;
+    ; */
     color: aliceblue;
-    
+    display: flex;
+    justify-content: center;
 }
 
 
