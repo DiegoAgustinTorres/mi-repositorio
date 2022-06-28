@@ -689,10 +689,15 @@ footer h3{
 
 /* ---------------------------------- */
 
+.table{
+    background-color: #042544;
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 10px;
+}
 
 
-
-
+/* -------------------------------------- */
 
 .contacto__form{
     background-color: #085394;
@@ -890,6 +895,14 @@ footer h3{
     font-size: 2.5vh;
 }
 
+
+
+.list-group{
+    background-color: #042544;
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 16px;
+}
 
 /* TARGETA--3--FIN----------------------------------- */
 

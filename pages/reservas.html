@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/Roundel_of_Argentina.svg.png" type="image/x-icon">
@@ -35,13 +36,18 @@
     </header>
 
 
+
+
+
+
+
     <main>
 
 
         <section class="reservas__section">
             <h2>Para realizar una reserva complete con los datos</h2>
             <div class="reservas__div">
-                <form>
+    <!--                 <form>
 
                     <label for="campo-nombres">Nombre y Apellido:</label>
                     <input type="text" id="campo-nombres">
@@ -65,15 +71,78 @@
                     <input type="submit" id="boton__reservas">
 
 
-                </form>
+                </form> -->
+
+
+
+
+                <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Direccion</label>
+                      <input type="text" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Calle</label>
+                      <input type="text" class="form-control" id="inputAddress2">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">Ciudad</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">Provincia</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Elegir...</option>
+                        <option>Buenos Aires</option>
+                        <option>Cordoba</option>
+                        <option>Santa Fe</option>
+                        <option>Misiones</option>
+                        <option>Corrientes</option>
+                        <option>Entre Rios</option>
+                        <option>Formosa</option>
+                        <option>Chaco</option>
+                        <option>Salta</option>
+                        <option>Jujuy</option>
+                        <option>Tucuman</option>
+                        <option>Santiago del Estero</option>
+                        <option>Catamarca</option>
+                        <option>La Rioja</option>
+                        <option>Mendoza</option>
+                        <option>San Luis</option>
+                        <option>La Pampa</option>
+                        <option>Neuquen</option>
+                        <option>Rio Negro</option>
+                        <option>Chubut</option>
+                        <option>Santa Cruz</option>
+                        <option>Tierra del Fuego</option>
+                        <option>San Juan</option>
+                        
+
+
+                      </select>
+                    </div>
+
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Reservar</button>
+                    </div>
+                  </form>
+           
             </div>
         </section>
-
-
-
-
-
     </main>
+
+
+
 
 
 
